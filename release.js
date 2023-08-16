@@ -139,7 +139,7 @@ function release () {
 
 				`rm -rf ~/Desktop/${app.name}`;
 
-			return run(cmd).catch(() => {});
+			return run(cmd).catch(e => console.error(e));
 		})
 		.then(() => {
 			spinner.text = 'Source zipped to ' + chalk.cyan('Desktop') + '.';
