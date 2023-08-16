@@ -118,7 +118,8 @@ function release () {
 			spinner.text = 'Zipping source...';
 			spinner.start();
 
-			const cmd = `mkdir ~/Desktop/${app.name} && ` +
+			const cmd = `rm -rf ~/Desktop/${app.name}` +
+				`mkdir ~/Desktop/${app.name} && ` +
 				`cp -R assets ~/Desktop/${app.name} && ` +
 				`cp *.* ~/Desktop/${app.name} && ` +
 				`cp LICENSE ~/Desktop/${app.name} && ` +
