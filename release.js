@@ -118,24 +118,24 @@ function release () {
 			spinner.text = 'Zipping source...';
 			spinner.start();
 
-			const cmd = `rm -rf ~/Desktop/${app.name}` +
+			const cmd = `rm -rf ~/Desktop/${app.name} && ` +
 				`mkdir ~/Desktop/${app.name} && ` +
 				`cp -R assets ~/Desktop/${app.name} && ` +
 				`cp *.* ~/Desktop/${app.name} && ` +
 				`cp LICENSE ~/Desktop/${app.name} && ` +
-				`rm ~/Desktop/${app.name}/assets/icon.sketch && ` +
-				`rm ~/Desktop/${app.name}/assets/screen.png && ` +
-				`rm ~/Desktop/${app.name}/package.json && ` +
-				`rm ~/Desktop/${app.name}/package-lock.json && ` +
-				`rm ~/Desktop/${app.name}/release.js && ` +
-				`rm ~/Desktop/${app.name}/jsconfig.json && ` +
-				`rm ~/Desktop/${app.name}/manifest-chrome.json && ` +
+				`rm -f ~/Desktop/${app.name}/assets/icon.sketch && ` +
+				`rm -f ~/Desktop/${app.name}/assets/screen.png && ` +
+				`rm -f ~/Desktop/${app.name}/package.json && ` +
+				`rm -f ~/Desktop/${app.name}/package-lock.json && ` +
+				`rm -f ~/Desktop/${app.name}/release.js && ` +
+				`rm -f ~/Desktop/${app.name}/jsconfig.json && ` +
+				`rm -f ~/Desktop/${app.name}/manifest-chrome.json && ` +
 
 				// zip for firefox
 				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/ && ` +
 
 				// zip for chrome
-				`rm ~/Desktop/${app.name}/manifest.json && ` +
+				`rm -f ~/Desktop/${app.name}/manifest.json && ` +
 				`cp manifest-chrome.json ~/Desktop/${app.name}/manifest.json && ` +
 				`7z a ~/Desktop/${app.name}-chrome.zip ~/Desktop/${app.name}/ && ` +
 
