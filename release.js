@@ -54,7 +54,6 @@ function commit (version) {
 	if (dryrun) return faker();
 	return new Promise((resolve, reject) => {
 		git
-			.silent(true)
 			.add('./*')
 			.commit('Release v' + version)
 			.push(['origin', 'master'], err => {
@@ -123,18 +122,18 @@ function release () {
 				`cp -R assets ~/Desktop/${app.name} && ` +
 				`cp *.* ~/Desktop/${app.name} && ` +
 				`cp LICENSE ~/Desktop/${app.name} && ` +
-				`rm "~/Desktop/${app.name}/assets/*.sketch" && ` +
-				`rm "~/Desktop/${app.name}/assets/screen*.*" && ` +
-				`rm ~/Desktop/${app.name}/package*.json && ` +
-				`rm ~/Desktop/${app.name}/release.js && ` +
-				`rm ~/Desktop/${app.name}/jsconfig.js && ` +
-				`rm ~/Desktop/${app.name}/manifest-chrome.js && ` +
+				`rm -f "~/Desktop/${app.name}/assets/*.sketch" && ` +
+				`rm -f "~/Desktop/${app.name}/assets/screen*.*" && ` +
+				`rm -f ~/Desktop/${app.name}/package*.json && ` +
+				`rm -f ~/Desktop/${app.name}/release.js && ` +
+				`rm -f ~/Desktop/${app.name}/jsconfig.js && ` +
+				`rm -f ~/Desktop/${app.name}/manifest-chrome.js && ` +
 
 				// zip for firefox
 				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/ > /dev/null && ` +
 
 				// zip for chrome
-				`rm ~/Desktop/${app.name}/manifest.js && ` +
+				`rm -f ~/Desktop/${app.name}/manifest.js && ` +
 				`cp manifest-chrome.json ~/Desktop/${app.name}/manifest.json && ` +
 				`7z a ~/Desktop/${app.name}-chrome.zip ~/Desktop/${app.name}/ > /dev/null && ` +
 
