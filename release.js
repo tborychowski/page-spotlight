@@ -127,6 +127,7 @@ function release () {
 				`rm ~/Desktop/${app.name}/assets/screen*.* && ` +
 				`rm ~/Desktop/${app.name}/package*.json && ` +
 				`rm ~/Desktop/${app.name}/release.js && ` +
+				`rm ~/Desktop/${app.name}/jsconfig.js && ` +
 				`rm ~/Desktop/${app.name}/manifest-chrome.js && ` +
 
 				// zip for firefox
@@ -138,6 +139,7 @@ function release () {
 				`7z a ~/Desktop/${app.name}-chrome.zip ~/Desktop/${app.name}/ > /dev/null && ` +
 
 				`rm -rf ~/Desktop/${app.name}`;
+			console.log(cmd);
 			return run(cmd).catch(() => {});
 		})
 		.then(() => {

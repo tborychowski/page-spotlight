@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "version": "1.0.0",
-  "name": "Page Spotlight ADHD",
+  "name": "Page Spotlight",
   "author": "Dziad Borowy",
   "description": "Highlight a block of content/text on any website to help you focus on it",
   "permissions": [
