@@ -10,7 +10,9 @@
     "scripting"
   ],
   "background": {
-    "scripts": [ "worker.js" ]
+    "scripts": [
+      "worker.js"
+    ]
   },
   "icons": {
     "16": "assets/icon16.png",
