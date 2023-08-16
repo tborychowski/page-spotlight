@@ -130,15 +130,15 @@ function release () {
 				`rm -f ~/Desktop/${app.name}/manifest-chrome.js && ` +
 
 				// zip for firefox
-				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/ > /dev/null && ` +
+				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/ && ` +
 
 				// zip for chrome
 				`rm -f ~/Desktop/${app.name}/manifest.js && ` +
 				`cp manifest-chrome.json ~/Desktop/${app.name}/manifest.json && ` +
-				`7z a ~/Desktop/${app.name}-chrome.zip ~/Desktop/${app.name}/ > /dev/null && ` +
+				`7z a ~/Desktop/${app.name}-chrome.zip ~/Desktop/${app.name}/ && ` +
 
 				`rm -rf ~/Desktop/${app.name}`;
-			console.log(cmd);
+
 			return run(cmd).catch(() => {});
 		})
 		.then(() => {
