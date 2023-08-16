@@ -125,6 +125,7 @@ function release () {
 				`cp LICENSE ~/Desktop/${app.name} && ` +
 				`rm -f ~/Desktop/${app.name}/assets/icon.sketch && ` +
 				`rm -f ~/Desktop/${app.name}/assets/screen.png && ` +
+				`rm -f ~/Desktop/${app.name}/assets/.DS_Store && ` +
 				`rm -f ~/Desktop/${app.name}/package.json && ` +
 				`rm -f ~/Desktop/${app.name}/package-lock.json && ` +
 				`rm -f ~/Desktop/${app.name}/release.js && ` +
@@ -132,7 +133,7 @@ function release () {
 				`rm -f ~/Desktop/${app.name}/manifest-chrome.json && ` +
 
 				// zip for firefox
-				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/ && ` +
+				`7z a ~/Desktop/${app.name}-firefox.zip ~/Desktop/${app.name}/* && ` +
 
 				// zip for chrome
 				`rm -f ~/Desktop/${app.name}/manifest.json && ` +
