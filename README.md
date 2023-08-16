@@ -2,7 +2,7 @@
 Highlight a block of content/text on any website to help you focus on it.
 
 ### Download
-* [Chrome store]()
-* [Firefox store]()
+* [Chrome]() (pending)
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/page-spotlight/)
 
 ![Page Spotlight for ADHD](assets/screen.png)
