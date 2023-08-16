@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Page Spotlight ADHD",
+  "author": "Dziad Borowy",
+  "description": "Highlight a block of content/text on any website to help you focus on it",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "scripts": [ "worker.js" ]
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "96": "assets/icon96.png"
+  },
+  "action": {
+    "default_title": "Add spotlight to this website"
+  }
+}

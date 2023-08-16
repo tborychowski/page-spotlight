@@ -1,0 +1,22 @@
+.spotlight-adhd-dragging { height: 100%; }
+
+.spotlight-adhd-dragging,
+.spotlight-adhd-dragging * { cursor: grabbing !important; }
+
+.spotlight-adhd {
+	position: fixed;
+	top: 30%;
+	left: calc(100vw / 2 - 50px);
+	width: 300px;
+	height: 200px;
+	z-index: 99999;
+	border-radius: 3px;
+	box-shadow: 0 0 0 10000px #000a;
+	resize: both;
+	overflow: auto;
+	border: 1px solid #000;
+}
+
+.spotlight-adhd .spotlight-adhd-inner { width: calc(100% - 10px); height: calc(100% - 10px); }
+.spotlight-adhd .spotlight-adhd-inner:focus { outline: none; }
+.spotlight-adhd .spotlight-adhd-inner:hover { cursor: grab; }

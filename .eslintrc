@@ -1,0 +1,43 @@
+{
+	"root": true,
+	"extends": "eslint:recommended",
+	"env": {
+		"es2022": true,
+		"browser": true,
+		"node": true
+	},
+	"globals": {
+		"chrome": true
+	},
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+        "indent": [ "error", "tab" ],
+        "quotes": [ "error", "single", "avoid-escape" ],
+        "semi": [ "error", "always" ],
+        "func-call-spacing": ["error", "never"],
+        "space-before-function-paren": ["error", "always"],
+        "object-curly-spacing": [ "error", "always" ],
+        "array-bracket-spacing": [ "error", "never" ],
+        "space-before-blocks": [ "error", "always" ],
+        "space-in-parens": [ "error", "never" ],
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }],
+        "no-undef": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-unused-vars": "error",
+        "no-trailing-spaces": "error",
+        "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+        "key-spacing": [ "error", { "beforeColon": false, "afterColon": true, "mode": "strict" } ],
+        "no-shadow": "error",
+        "eol-last": 1,
+        "curly": 0,
+        "no-console": 0,
+        "comma-dangle": 0,
+        "no-cond-assign": 0,
+        "prefer-promise-reject-errors": "error",
+        "prefer-const": ["error", { "destructuring": "any", "ignoreReadBeforeAssign": false } ]
+    }
+}

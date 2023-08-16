@@ -1,0 +1,21 @@
+{
+  "name": "page-spotlight-adhd",
+  "description": "Highlight a block of content/text on any website to help you focus on it",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tborychowski/page-spotlight.git"
+  },
+  "author": "Dziad Borowy",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "devDependencies": {
+    "chalk": "^5.3.0",
+    "detect-indent": "^7.0.1",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.2.10",
+    "ora": "^7.0.1",
+    "semver": "^7.5.4",
+    "simple-git": "^3.19.1"
+  }
+}
