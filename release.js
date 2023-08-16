@@ -141,8 +141,6 @@ function release () {
 
 				`rm -rf ~/Desktop/${app.name}`;
 
-			console.log(cmd);
-
 			return run(cmd).catch(e => console.error(e));
 		})
 		.then(() => {
