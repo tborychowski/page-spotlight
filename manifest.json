@@ -22,5 +22,11 @@
   },
   "action": {
     "default_title": "Add spotlight to this website"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "page-spotlight-for-adhd",
+      "strict_min_version": "42.0"
+    }
   }
 }
