@@ -123,8 +123,8 @@ function release () {
 				`cp -R assets ~/Desktop/${app.name} && ` +
 				`cp *.* ~/Desktop/${app.name} && ` +
 				`cp LICENSE ~/Desktop/${app.name} && ` +
-				`rm ~/Desktop/${app.name}/assets/*.sketch && ` +
-				`rm ~/Desktop/${app.name}/assets/screen*.* && ` +
+				`rm "~/Desktop/${app.name}/assets/*.sketch" && ` +
+				`rm "~/Desktop/${app.name}/assets/screen*.*" && ` +
 				`rm ~/Desktop/${app.name}/package*.json && ` +
 				`rm ~/Desktop/${app.name}/release.js && ` +
 				`rm ~/Desktop/${app.name}/jsconfig.js && ` +
