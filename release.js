@@ -124,7 +124,7 @@ function release () {
 				`cp LICENSE ~/Desktop/${app.name} && ` +
 				`rm -f "~/Desktop/${app.name}/assets/*.sketch" && ` +
 				`rm -f "~/Desktop/${app.name}/assets/screen*.*" && ` +
-				`rm -f ~/Desktop/${app.name}/package*.json && ` +
+				`rm -f "~/Desktop/${app.name}/package*.json" && ` +
 				`rm -f ~/Desktop/${app.name}/release.js && ` +
 				`rm -f ~/Desktop/${app.name}/jsconfig.js && ` +
 				`rm -f ~/Desktop/${app.name}/manifest-chrome.js && ` +
